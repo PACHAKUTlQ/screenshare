@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Live Image</title>
+</head>
+
+<body>
+
+    <img src="share.jpg" id="liveImage" alt="Live Image" style="zoom:40%;">
+
+    <script>
+        setInterval(function () {
+            var image = document.getElementById("liveImage");
+            image.src = "share.jpg?" + new Date().getTime();
+        }, 400); 
+    </script>
+
+</body>
+
+</html>
